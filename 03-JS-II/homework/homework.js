@@ -9,7 +9,8 @@ function obtenerMayor(x, y) {
     return x
   } else if (x === y) {
     return y
-  } else { return y }
+  } 
+  return y 
 }
 
 function mayoriaDeEdad(edad) {
@@ -18,9 +19,8 @@ function mayoriaDeEdad(edad) {
   //Si es menor, devolver --> "Not allowed"
   if (edad >= 18) {
     return "Allowed"
-  } else {
+  } 
     return "Not allowed"
-  }
 }
 
 function conection(status) {
@@ -33,7 +33,8 @@ function conection(status) {
     return "Online"
   } else if (status === 2) {
     return "Away"
-  } else { return "Offline" }
+  } 
+  return "Offline" 
 }
 
 function saludo(idioma) {
@@ -50,7 +51,8 @@ function saludo(idioma) {
     return "Ni Hao!"
   } else if (idioma === 'ingles') {
     return "Hello!"
-  } else { return "Hola!" }
+  } 
+   return "Hola!"
 }
 
 function colors(color) {
@@ -62,10 +64,10 @@ function colors(color) {
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
   switch (color) {
-    case "blue": return "This is blue";
-    case "red": return "This is red";
-    case "green": return "This is green";
-    case "orange": return "This is orange";
+    case "blue": return "This is " + color;
+    case "red": return "This is " + color;
+    case "green": return "This is " + color;
+    case "orange": return "This is " + color;
     default: return "Color not found"
   }
 }
@@ -76,9 +78,9 @@ function esDiezOCinco(numero) {
   // Tu código:
   if (numero === 10 || numero === 5) {
     return true
-  } else {
-    return false
   }
+  return false
+
 }
 
 function estaEnRango(numero) {
@@ -87,7 +89,8 @@ function estaEnRango(numero) {
   // Tu código:
   if (numero < 50 && numero > 20) {
     return true
-  } else { return false }
+  } 
+  return false 
 }
 
 function esEntero(numero) {
@@ -100,7 +103,8 @@ function esEntero(numero) {
   // Tu código:
   if (numero === Math.floor(numero)) {
     return true
-  } else { return false }
+  } 
+  return false 
 }
 
 function fizzBuzz(numero) {
@@ -115,9 +119,10 @@ function fizzBuzz(numero) {
   }
   else if (numero % 5 === 0) {
     return "buzz"
-  } else {
-    return numero
-  }
+  } 
+
+  return numero
+  
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -137,9 +142,9 @@ function operadoresLogicos(num1, num2, num3) {
     return 'Número 1 es mayor y positivo'
   } else if (num3 > num1 && num3 > num2) {
     return num3 + 1
-  } else {
-    return false
-  }
+  } 
+
+  return false
 }
 
 function esPrimo(numero) {
@@ -206,6 +211,22 @@ function doWhile(numero) {
   return value;
 
 }
+
+
+///// OTRA OPCION
+function doWhile2 (numero) {
+  //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
+  //Retornar el valor final.
+  //Usar el bucle do ... while.
+  contador=0;
+  while (contador<8){
+    numero = numero + 5
+    contador = contador +1
+  }
+  return numero
+
+}
+
 
 
 // No modificar nada debajo de esta línea
